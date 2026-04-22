@@ -23,6 +23,11 @@ Ensuite, Frida est utilisé pour afficher les processus actifs et vérifier que 
 frida-ps -U
 ```
 
+<p align="center">
+  <img src="images/1.png" width="700"/>
+</p>
+
+
 ---
 
 ## 🧠 Étape 2 : Analyse du code avec JADX
