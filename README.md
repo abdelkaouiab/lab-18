@@ -36,6 +36,11 @@ L’application est décompilée avec JADX afin d’explorer sa structure intern
 
 Pendant l’analyse, une fonction située dans `MainActivity` est identifiée comme responsable de la génération du mot de passe.
 
+<p align="center">
+  <img src="images/2.png" width="700"/>
+</p>
+
+
 ---
 
 ## 📂 Étape 3 : Analyse du fichier strings.xml
@@ -48,6 +53,11 @@ Les données découvertes incluent :
 * Une clé API
 * L’URL de la base de données
 
+  <p align="center">
+  <img src="images/3.png" width="700"/>
+</p>
+
+
 ---
 
 ## ⚡ Étape 4 : Injection dynamique avec Frida
@@ -59,6 +69,10 @@ frida -U -f com.pwnsec.firestorm -l frida_firestorm.js
 ```
 
 Cette approche permet d’observer le comportement interne de l’application en temps réel.
+<p align="center">
+  <img src="images/4.png" width="700"/>
+</p>
+
 
 ---
 
@@ -67,6 +81,10 @@ Cette approche permet d’observer le comportement interne de l’application en
 Après l’authentification réussie, l’accès à Firebase est obtenu.
 
 Le flag final est ensuite récupéré à partir des données accessibles dans l’application.
+<p align="center">
+  <img src="images/5.png" width="700"/>
+</p>
+
 
 ---
 
